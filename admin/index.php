@@ -30,6 +30,7 @@
 
             if($resultado) {
                 header('Location: /admin?resultado=3');
+                echo "Eliminado correctamente";
             }
         }
     }
@@ -45,6 +46,10 @@
         <?php elseif(intval($resultado) === 2): ?>
             <p class="alerta exito"> Anuncio Actualizado correctamente </p>
          <?php endif; ?>
+
+            <?php if(intval($resultado) === 3): ?> 
+                <p class="alerta exito"> Anuncio Eliminado correctamente </p>
+            <?php endif; ?>
 
         <a href="../../admin/propiedades/crear.php" class="boton boton-verde">Nueva Propiedad</a>
 

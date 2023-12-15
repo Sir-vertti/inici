@@ -50,8 +50,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $errores[] = "Debes añadir un precio";
     }
 
-    if (strlen($descripcion) < 50) {
-        $errores[] = "Debes añadir una descripción de al menos 50 caracteres";
+    if (strlen($descripcion) < 10) {
+        $errores[] = "Debes añadir una descripción de al menos 10 caracteres";
     }
 
     if (!$habitaciones) {
