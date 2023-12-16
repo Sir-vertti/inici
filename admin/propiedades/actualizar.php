@@ -1,5 +1,8 @@
 <?php
 
+require '../../includes/funciones.php';
+$auth = estaAutenticado();
+
 $id = $_GET['id'];
 $id = filter_var($id, FILTER_VALIDATE_INT);
 

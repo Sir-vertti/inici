@@ -1,6 +1,9 @@
 <?php
 include '../../includes/templates/header.php';
-require '../../includes/config/database.php';
+include '../../includes/config/database.php';
+require '../../includes/funciones.php';
+$auth = estaAutenticado();
+
 
 $db = conectarDB();
 
